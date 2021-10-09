@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.box{
+    width: 0vw;
+    height: 0.5vh;
+    background-color: red;
+    animation-name: progressbar;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: 1;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes progressbar {
+    from{
+        width: 0vw;
+    }
+
+    to{
+        width: 100vw;
+    }
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgbx{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+section .imgbx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg,#e91e63,#062c9b);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+section .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .contentbx .formbx{
+    width: 50%;
+}
+section .contentbx .formbx h2{
+    color: #062c9b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx{
+    margin-bottom: 20px;
+}
+section .contentbx .formbx .inputbx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+section .contentbx .formbx .inputbx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+
+}
+section .contentbx .formbx .inputbx input[type="submit"]{
+    background:#062c9b;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .contentbx .formbx .inputbx input[type="submit"]:hover{
+    background: blue;
+}
+section .contentbx .formbx .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 16px;
+}
+section .contentbx .formbx .inputbx p{
+    color: #2874f0;
+}
+section .contentbx .formbx .inputbx p a{
+    color: #ff4584;
+}
+section .contentbx .formbx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+section .contentbx .formbx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .contentbx .formbx .homepage a{
+    
+    background-color: #ff4584;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .sci .fa{
+    padding: 10px 12px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    
+}
+.social .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+@media (max-width: 768px)
+{
+    section .imgbx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentbx .formbx h3{
+        color: black;
+    }
+    section .contentbx .formbx .inputbx span{
+    color: black;
+    font-weight: 700;
+    }
+    section .contentbx .formbx .inputbx input{
+    border: 1px solid black;
+    color: black;
+    }
+    section .contentbx .formbx .remember{
+        color: black;
+       }
+       section .contentbx .formbx .inputbx p{
+        color: black;
+    }
+}
