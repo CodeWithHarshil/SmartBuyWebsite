@@ -41,12 +41,12 @@
     .btn{
         position: absolute;
     top: 33%;
-    left: 24%;
+    left: 16%;
     }
     .cart{
         position: absolute;
-    left: 295px;
-    top: 213px;
+    left: 235px;
+    top: 220px;
     }
     .dropdown{
         position: absolute;
@@ -65,7 +65,7 @@
     .social{
         position: absolute;
     right: 4%;
-    top: 459%;
+    top: 512%;
     }
     .flex-all-center{
         display: flex;
