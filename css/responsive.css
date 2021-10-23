@@ -1,4 +1,4 @@
-@media screen and (max-width: 1160px){
+@media screen and (max-width: 1000px){
     header{
         height: 58vh;
     }
@@ -8,6 +8,7 @@
 
     .slider{
         height: 23vh;
+        width: 88vw;
     }
 
     .logo{
@@ -37,13 +38,22 @@
         left: 20px;
         top: 170px;
     }
+    .btn{
+        position: absolute;
+    top: 33%;
+    left: 24%;
+    }
     .cart{
         position: absolute;
-        left: 159px;
-        top: 171px;
+    left: 295px;
+    top: 213px;
+    }
+    .dropdown{
+        position: absolute;
+    top: 33%;
     }
     .card-item img{ 
-        width: 140px;
+        width: 100px;
         display: flex;
         justify-content: center;
     }
@@ -52,5 +62,16 @@
         display: flex;
         justify-content: center;
     }
+    .social{
+        position: absolute;
+    right: 4%;
+    top: 459%;
+    }
+    .flex-all-center{
+        display: flex;
+        flex-direction: column;
+        height: 48vh;
+    }
 }
     
+
